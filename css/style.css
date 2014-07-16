@@ -2,6 +2,9 @@
 body{
 	background: #0d9acf url(../img/background.png)
 }
+.short-text{
+	text-align: center;
+}
 .img-responsive{
 	display: inline-block;
 	*display: inline;
@@ -14,8 +17,8 @@ body{
 }
 .social-media{
 	margin-top: 20px;
-	float: right;
 	color: white;
+	text-align: center;
 }
 .logo-container{
 	text-align: center;
@@ -31,6 +34,13 @@ body{
 .freelancer{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
+}
+.naviation-small{
+	text-align: center;
+	color: white;
+}
+.navigation-small a{
+	color: #fff;
 }
 .navigation{
 	color: white;
@@ -50,21 +60,65 @@ body{
 	text-align: center;
 	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
 }
-
-
-
-
-
-
+.twitter-feed{
+	padding-top: 20px;
+	text-align: center;
+}
+.footer-background{
+	height: 220px;
+	background:#06A3D0;
+}
+.footer-information{
+	background: #057C9E;
+	height: 100px;
+}
+.copyright-information{
+	margin: 0px 0px;
+	color: white;
+}
+.footer-links{
+	color: white;
+	margin: 30px 0px auto;
+	font-size: 16px;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+.banner{
+	text-align: center;
+	margin: -230px 380px auto;
+}
+.video{
+	text-align: center;
+}
+p{
+	color: white;
+	text-align: cente;
+}
+h2{
+	color: white;
+	text-align: center;
+}
+h3{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	text-align: center;
+	color: white;
+}
+.pagination{
+	margin: 20px 430px;
+}
 /* All styles for SM */
 @media (min-width: 768px){
-
+	.social-media{
+		text-align: center;
+	}
 }
 
 /* All styles for MD */
 @media (min-width: 992px){
 	.logo-container{
 		text-align: left;
+	}
+	.social-media{
+		text-align: center;
 	}
 }
 /* All styles for LG */
