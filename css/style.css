@@ -8,6 +8,18 @@ body{
 .short-text{
 	text-align: center;
 }
+h1{
+	text-align: center;
+	color: black;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+.E-mail{
+	text-align: center;
+	color: white;
+}
+a{
+	color: white;
+}
 .img-responsive{
 	display: inline-block;
 	display: inline;
