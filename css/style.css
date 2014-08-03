@@ -2,6 +2,22 @@
 body{
 	background: #0d9acf url(../img/background.png)
 }
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+	font-family: "Andale Mono", AndaleMono, monospace;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+	color: #000;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #000;
+}
+.navbar-default .navbar-toggle{
+	background: white;
+	border-color: #F90909;
+}
 .span6{
 	text-align: center;
 }
@@ -15,10 +31,22 @@ h1{
 }
 .E-mail{
 	text-align: center;
-	color: white;
+	font-family: monospace;
+}
+.facebook{
+	text-align: center;
+	font-family: monospace;
+}
+.twitter{
+	text-align: center;
+	font-family: monospace;
+}
+.googleplus{
+	text-align: center;
+	font-family: monospace;
 }
 a{
-	color: white;
+	color: black;
 }
 .img-responsive{
 	display: inline-block;
@@ -31,9 +59,8 @@ a{
 	margin-bottom: 15px;
 }
 .social-media{
-	margin-top: 20px;
-	color: white;
 	text-align: center;
+	margin: 30px auto;
 }
 .logo-container{
 	text-align: center;
@@ -69,6 +96,7 @@ a{
 }
 .navigation{
 	color: white;
+	margin: 30px auto;
 }
 .navigation a{
 	color: #fff;
@@ -98,8 +126,11 @@ a{
 	height: 100px;
 }
 .copyright-information{
-	margin: 0px 0px;
+	margin: -10px 0px;
 	color: white;
+}
+.footerlogo{
+	margin: 20px 0px auto;
 }
 .footer-links{
 	color: white;
@@ -117,6 +148,7 @@ a{
 p{
 	color: white;
 	text-align: center;
+	font-family: cursive;
 }
 h2{
 	color: white;
@@ -125,16 +157,15 @@ h2{
 h3{
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	text-align: center;
-	color: white;
+	color: black;
 }
 .pagination{
 	margin: 20px 430px;
 }
 /* All styles for SM */
 @media (min-width: 768px){
-	.social-media{
-		text-align: center;
-	}
+	.navbar-nav{
+		float: left;
 }
 
 /* All styles for MD */
@@ -142,9 +173,7 @@ h3{
 	.logo-container{
 		text-align: left;
 	}
-	.social-media{
-		text-align: center;
-	}
+	
 }
 /* All styles for LG */
 @media (min-width: 1200px){
