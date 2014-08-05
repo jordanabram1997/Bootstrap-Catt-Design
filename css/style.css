@@ -2,14 +2,21 @@
 body{
 	background: #0d9acf url(../img/background.png)
 }
+.container-fluid{
+	padding-right: 0px;
+}
 .navbar-default{
-	background-color: transparent;
-	border-color: transparent;
+	background:none;
+	border: none;
 	font-family: "Andale Mono", AndaleMono, monospace;
+
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border: none;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
 	color: #000;
-	background-color: transparent;
+	background: none;
 }
 .navbar-default .navbar-nav>li>a{
 	color: #000;
@@ -17,6 +24,17 @@ body{
 .navbar-default .navbar-toggle{
 	background: white;
 	border-color: #F90909;
+}
+.navbar-brand{
+	padding: 2px;
+}
+.nav>li>a{
+	padding:0 5px;
+	
+}
+.workexample{
+	text-align: center;
+	padding:15px;
 }
 .span6{
 	text-align: center;
@@ -123,7 +141,7 @@ a{
 }
 .footer-information{
 	background: #057C9E;
-	height: 100px;
+	padding:10px;
 }
 .copyright-information{
 	margin: -10px 0px;
@@ -165,7 +183,10 @@ h3{
 /* All styles for SM */
 @media (min-width: 768px){
 	.navbar-nav{
-		float: left;
+		padding: 1px 0;
+		margin: 15px 0;
+	}
+
 }
 
 /* All styles for MD */
