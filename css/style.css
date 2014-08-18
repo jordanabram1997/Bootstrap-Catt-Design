@@ -7,6 +7,7 @@
 }
 body {
     padding-top: 70px;
+    background: #E0E0E0;
 }
 h2 {
     text-align: center;
@@ -15,6 +16,9 @@ h2 {
 .active>a {
     color: none;
     text-align: center;
+}
+.navbar-default{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .navbar-nav.navbar-right {
     text-align: center;
