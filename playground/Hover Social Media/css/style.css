@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'social-icons';
+  src: url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.eot?66006919');
+  src: url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.eot?66006919#iefix') format('embedded-opentype'),
+       url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.woff?66006919') format('woff'),
+       url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.ttf?66006919') format('truetype'),
+       url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.svg?66006919#social-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  text-align:center;
+  font-family:Sans-serif;
+  color:#666;
+  font-size:18px;
+  padding:20px 0;
+}
+
+#hover-effects {
+	list-style:none;
+	text-align:center;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+#hover-effects li {
+	display:inline-block;
+	margin:50px 10px;
+}
+#hover-effects li a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+	color: #666;
+	width:80px;
+	height: 80px;
+	line-height: 80px;
+}
+#hover-effects li a:before {
+	content:attr(data-icon);
+    display: block;
+	font-family: 'social-icons';
+  line-height:1;
+  font-size:80px;
+}
+#hover-effects li a:after {
+	content:"";
+	display: block;
+	position: absolute;
+	top:3px;
+	right:3px;
+	bottom:3px;
+	left:3px;
+	border:3px dashed #666;
+	border-radius:100%;
+}
+
+#hover-effects li a:hover {
+	-webkit-transform:scale(.8);
+	-moz-transform:scale(.8);
+	-o-transform:scale(.8);
+	-ms-transform:scale(.8);
+	transform:scale(.8);
+}
+#hover-effects li a:hover:after {
+	top:-10px;
+	right:-10px;
+	bottom:-10px;
+	left:-10px;
+}
+
+#hover-effects li a, 
+#hover-effects li a:before, 
+#hover-effects li a:after {
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	-ms-transition:all .2s linear;
+	transition:all .2s linear;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

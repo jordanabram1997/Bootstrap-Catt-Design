@@ -1,202 +1,177 @@
-
-body{
-	background: #0d9acf url(../img/background.png)
+@font-face {
+    font-family: 'social-icons';
+    src: url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.eot?66006919');
+    src: url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.eot?66006919#iefix') format('embedded-opentype'), url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.woff?66006919') format('woff'), url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.ttf?66006919') format('truetype'), url('https://dl.dropboxusercontent.com/u/36792465/codepen/hover-effects/social-icons.svg?66006919#social-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-.container-fluid{
-	padding-right: 0px;
+body {
+    padding-top: 70px;
 }
-.navbar-default{
-	background:none;
-	border: none;
-	font-family: "Andale Mono", AndaleMono, monospace;
-
+h2 {
+    text-align: center;
+    font-family: monospace;
 }
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-	border: none;
+.active>a {
+    color: none;
+    text-align: center;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
-	color: #000;
-	background: none;
+.navbar-nav.navbar-right {
+    text-align: center;
 }
-.navbar-default .navbar-nav>li>a{
-	color: #000;
+.navbar-brand {
+    padding: 0;
+    padding-left: 10px;
 }
-.navbar-default .navbar-toggle{
-	background: white;
-	border-color: #F90909;
+#owl-demo .item {
+    margin: 3px;
 }
-.navbar-brand{
-	padding: 2px;
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
-.nav>li>a{
-	padding:0 5px;
-	
+.freelancer>h5 {
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 15px;
 }
-.workexample{
+.events>h3 {
+    text-align: center;
+    font-family: monospace;
+}
+.workexample {
+    text-align: center;
+    padding: 15px;
+}
+.img-responsive {
+    display: inline-block;
+    display: inline;
+}
+.twitter-feed {
+    text-align: center;
+    padding-top: 30px;
+}
+#hover-effects {
+    list-style: none;
+    text-align: center;
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+#hover-effects li {
+    display: inline-block;
+    margin: 50px 10px;
+}
+#hover-effects li a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color: #666;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+#hover-effects li a:before {
+    content: attr(data-icon);
+    display: block;
+    font-family: 'social-icons';
+    line-height: 1;
+    font-size: 80px;
+}
+#hover-effects li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    border: 3px dashed #666;
+    border-radius: 100%;
+}
+#hover-effects li a:hover {
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+}
+#hover-effects li a:hover:after {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+}
+#hover-effects li a, #hover-effects li a:before, #hover-effects li a:after {
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.screen-reader-text {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.social-media {
+    padding-right: 30px;
+}
+.company {
+    color: white;
+    margin: -10px auto;
+}
+.short-text>h3 {
+    text-align: center;
+}
+.span6 {
+    text-align: center;
+}
+.title>h3{
 	text-align: center;
-	padding:15px;
+	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size:-webkit-xxx-large;
 }
-.span6{
+.brief>p{
 	text-align: center;
+	font-size: medium;
 }
-.short-text{
-	text-align: center;
-}
-h1{
-	text-align: center;
-	color: black;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-}
-.E-mail{
-	text-align: center;
-	font-family: monospace;
-}
-.facebook{
-	text-align: center;
-	font-family: monospace;
-}
-.twitter{
-	text-align: center;
-	font-family: monospace;
-}
-.googleplus{
-	text-align: center;
-	font-family: monospace;
-}
-a{
-	color: black;
-}
-.img-responsive{
-	display: inline-block;
-	display: inline;
-}
-.visual-box{
-	background-color: #f5f5f5;
-	border: 1px solid #eee;
-	padding: 11px;
-	margin-bottom: 15px;
-}
-.social-media{
-	text-align: center;
-	margin: 30px auto;
-}
-.logo-container{
-	text-align: center;
-}
-#owl-demo .item{
-  margin: 3px;
-}
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-#bar{
-  width: 0%;
-  max-width: 100%;
-  height: 4px;
-  background: #7fc242;
-}
-#progressBar{
-  width: 100%;
-  background: #EDEDED;
-}
-.freelancer{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-align: center;
-}
-.naviation-small{
-	text-align: center;
-	color: white;
-}
-.navigation-small a{
-	color: #fff;
-}
-.navigation{
-	color: white;
-	margin: 30px auto;
-}
-.navigation a{
-	color: #fff;
-}
-.navigation-tablet{
-	text-align: center;
-	color: white;
-}
-.navigation-tablet a{
-	color: #fff;
-}
-.latest-title{
-	color: white;
-	text-align: center;
-	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
-}
-.twitter-feed{
-	padding-top: 20px;
-	text-align: center;
-}
-.footer-background{
-	height: 220px;
-	background:#06A3D0;
-}
-.footer-information{
-	background: #057C9E;
-	padding:10px;
-}
-.copyright-information{
-	margin: -10px 0px;
-	color: white;
-}
-.footerlogo{
-	margin: 20px 0px auto;
-}
-.footer-links{
-	color: white;
-	margin: 30px 0px auto;
-	font-size: 16px;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-}
-.banner{
-	text-align: center;
-	margin: -230px 380px auto;
-}
-.video{
-	text-align: center;
-}
-p{
-	color: white;
+.information{
 	text-align: center;
 	font-family: cursive;
+	letter-spacing: 0.1em;
+	font-variant: small-caps;
+	padding: 1px;
 }
-h2{
-	color: white;
-	text-align: center;
+.information>h4>a{
+	color: #5213AC;
+	text-decoration: none;
+	font-variant: small-caps;
 }
-h3{
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	text-align: center;
-	color: black;
+.information>h4>a:hover{
+	color: #19B31B;
 }
-.pagination{
-	margin: 20px 430px;
-}
-/* All styles for SM */
-@media (min-width: 768px){
-	.navbar-nav{
-		padding: 1px 0;
-		margin: 15px 0;
-	}
+/* Extra small devices (phones, less than 768px) */
 
-}
+/* No media query since this is the default in Bootstrap */
 
-/* All styles for MD */
-@media (min-width: 992px){
-	.logo-container{
-		text-align: left;
-	}
-	
-}
-/* All styles for LG */
-@media (min-width: 1200px){
+/* Small devices (tablets, 768px and up) */
 
+@media (min-width: @screen-sm-min) {
+  	
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: @screen-md-min) {
+    
+}
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: @screen-lg-min) {
+    ...
 }
