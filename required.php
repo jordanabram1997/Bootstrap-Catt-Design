@@ -15,7 +15,7 @@
         } else { 
             echo '<p>Something went wrong, go back and try again!</p>'; 
         } 
-    } else if ($_POST['submit'] && $human != '4') {
+    }else{
         echo '<p>You answered the anti-spam question incorrectly!</p>';
     }
 ?>
