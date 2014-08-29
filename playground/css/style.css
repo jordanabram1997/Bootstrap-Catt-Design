@@ -1,0 +1,36 @@
+.items{
+	text-align: center;
+	text-decoration: none;
+	font-family: monospace;
+	font-size: 42px; 
+}
+.items>a{
+	color: #57544E;
+}
+.item>a:hover{
+	color: red;
+}
+.load-screen{
+	text-align: center;
+	text-decoration: none;
+	font-family: monospace;
+	font-size: 42px;	
+}
+.load-screen>a{
+	color: #57544E;
+}
+.load-screen>a:hover{
+	color: #EA2532;
+}
+.mobile-menu{
+	text-align: center;
+	text-decoration: none;
+	font-family: monospace;
+	font-size: 42px;
+}
+.mobile-menu>a{
+	color: #57544E;
+}
+.mobile-menu>a:hover{
+	color: #2D46D7;
+}
